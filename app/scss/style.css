@@ -84,6 +84,15 @@ body {
 .header {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
 }
+.header.open .header_bars span:first-child {
+  transform: translateY(0.5rem);
+}
+.header.open .header_bars span:last-child {
+  transform: translateY(-0.5rem);
+}
+.header.open .header_menu {
+  display: block;
+}
 .header_center {
   display: flex;
   align-items: center;
@@ -98,8 +107,28 @@ body {
   width: 1.8rem;
   height: 0.1rem;
   background-color: white;
+  transition: 0.4s ease-in;
 }
 .header_bars span:not(:last-child) {
   margin-bottom: 0.4rem;
+}
+.header_menu {
+  background-color: white;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  box-shadow: 0 0 5rem black;
+}
+.header_menu a {
+  display: block;
+  text-decoration: none;
+  line-height: 2rem;
+  margin-left: 2rem;
+  position: relative;
+}
+
+.main {
+  height: 25.52rem;
 }
 /*# sourceMappingURL=style.css.map */
