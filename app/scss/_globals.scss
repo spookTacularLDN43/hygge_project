@@ -52,11 +52,7 @@ table {
   padding: 0;
   box-sizing: border-box;
 }
-body{
-    background-color: black; 
-    
-  
-}
+
 
 .flex {
     display: flex;
@@ -70,4 +66,12 @@ body{
 &-ai-c{
     align-items: center;
 }
+}
+
+body{
+	background-image: url('/images/hygge_main.jpg');
+    background-position: center;
+    height: 30rem;
+    background-size: cover;
+	background-repeat: no-repeat;
 }

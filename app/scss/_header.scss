@@ -1,22 +1,30 @@
 .header{
-
+background-image: linear-gradient(to bottom, $navColor, transparent);
     &_center{
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 1rem;
+            padding: 1rem 2rem;
+            
           }
 
-    
+    &_logo{
+        img{
+        max-width: 5rem;
+        
+        }
+    }
 
     &_bars{
         span {
             display: block;
-            width: 25px;
-            height: 3px;
-            color: white;
+            width: 1.8rem;
+            height: 0.1rem;
+            background-color: white;
 
-            
+            &:not(:last-child){
+                margin-bottom: 0.4rem;
         }
     }
     }
+}
